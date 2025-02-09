@@ -1,0 +1,39 @@
+Change? log?
+    Added a bunch of helper functions in adventure file for better organization, and separated possible user
+    actions into two categories; menu actions and events, where the menu actions dont count as an event and are
+    not added to the event_log. Also, how should we handle picking up an object? idk how that should work.
+
+em:
+clean up edit some func, going in directions works
+i kinda wanted to make a silly message if u cant go in the direction u chose
+pick up obj should be an undoable action, be in non menu actions function
+
+undo works, moves remaining works
+
+---------------------------------------------------------------------------------------------------------
+system for id locations added:
+    •	First digit = left-right (east-west) position
+	•	Second digit = north-south position
+
+Sidney Smith (SS) is the central reference point at 35.
+	•	Moving south increases the second digit.
+	•	Moving north decreases the second digit.
+	•	Moving east (+) or west (-) changes the first digit.
+    •   Top left corner of campus is 11, bottom right is 99
+ex:
+Since Bahen is south of SS, its ID is 37 (same first digit, higher second digit).
+Since Robarts is north of SS, its ID is 33
+check example image for a visual idea of how this works. the numbers arent completely accurate or evenly spaced, its just
+more simple so "go south" we can simply add 1 or 2 to the second number in the id digit instead of looking for which id
+we need
+if u get too dizzy we dont have to use this but it hopefully makes sense
+---------------------------------------------------------------------------------------------------------
+also idea that if cant find mug, buy it at the store
+
+IMOPRTANT: on the chopping block (from my understanding): score player stat/ target points, start position (which is already encoded in location data)
+and target position). the win condition for the game is to bring every item back home and submit, not a score based win
+
+repurposed event log's description section to store its name for easier viewing in log. dont see why it would be necessary
+for long description in log anyway
+
+undoing picking up stuff and undoing movement works (all basic cases i tried maybe bugs)

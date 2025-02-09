@@ -1,0 +1,18 @@
+idea i thought of and im gonna write down so i dont forget:
+same location but changed (e.g. locked room becomes unlocked) use the game_data file to store info on
+all the versions of each location and each have the same id/refer to the same id or something, and once a change is made,
+in the dictionary in the adventure object you chNge what the id refers to so its the new location, so everything is the same
+just with modifications made, and the alternate locations are stored somewhere else so they can be returned or something.
+
+
+another thing i just realized: we don't need to undo pick up actions, we can just let the user drop and pick up as separate
+functions instead woah. Gotta check if this is allowed but should fix a lot of issues.
+
+orr, make Event an abstract class and make different types of events that perform different tasks.
+
+also, move the game log to the adventure game class cuz that makes a bit more sense
+
+
+note to self: youre gay
+omg i really wanna make a place where u can only head to but going east or west or north or south from there all lead to the same
+place in a loop you can never escape LMFAOO

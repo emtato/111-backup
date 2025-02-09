@@ -1,0 +1,134 @@
+{
+  "locations": [
+    {
+      "id": 33,
+      "name": "Rob bart",
+      "brief_description": "rob barts - your favourite place here",
+      "long_description": "where should we go? idk. u decide. idk. wanna go to rob barts®? sure! okay!",
+      "available_commands": {
+        "go south": 37,
+        "go east": 66,
+        "go north": 33
+      },
+      "items": [
+        "loonie"
+      ]
+    }, {
+      "id": 35,
+      "name": "sidney smith",
+      "brief_description": "sidney smith - theres boba here",
+      "long_description": "sidney smithingtons - thy is welcome at this location for bobble tea",
+      "available_commands": {
+        "go south": 37,
+        "go east": 66,
+        "go north": 33
+      },
+      "items": [
+        "loonie"
+      ]
+    }, {
+      "id": 37,
+      "name": "Bahen",
+      "brief_description": "You are at Bahen. Elevators to the west, exit to George street to the east.",
+      "long_description": "You are on the first floor of the Bahen Center. It's usually crowded at this time of the day, but today it's eerily quiet. Only a few students are studying at the table near the doors. You better not disturb them. There are elevators to the West, and an exit from the building to St. George street to the East.",
+      "available_commands": {
+        "go south": 38,
+        "go east": 47,
+        "go north": 35,
+        "go west": 27
+      },
+      "items": [
+        "toonie", "mug", "usb", "toonie"
+      ]
+    }, {
+      "id": 99999999999,
+      "name": "Another place",
+      "brief_description": "short description of the new place",
+      "long_description": "long description of the new place",
+      "available_commands": {
+      },
+      "items": []
+    }, {
+      "id": 38,
+      "name": "University bookstore",
+      "brief_description": "bookstore",
+      "long_description": "long description of the new place",
+      "available_commands": {
+        "go south": 39,
+        "go east": 48,
+        "go north": 37,
+        "go west": 28
+      },
+      "items": []
+    }, {
+      "id": 39,
+      "name": "Boris Khesin's house",
+      "brief_description": "this is a strange place",
+      "long_description": "ur at boris' place. all of the digits of pi are written on the walls. boris khesin found the last digit of an irrational number",
+      "available_commands": {
+        "go east": 49,
+        "go north": 38,
+        "go west": 19
+      },
+      "items": ["math137 term test?", "toonie", "loonie", "toonie", "toonie", "toonie", "loonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie", "toonie"]
+    }, {
+      "id": 19,
+      "name": "emma's residence that she pays 28000 a year for and doesnt even have room service",
+      "brief_description": "campus one deadnames people",
+      "long_description": "we can use this as the residence in the game cuz its conveniently near the others?",
+      "available_commands": {
+        "go east": 39
+      },
+      "items": []
+    }, {
+      "id": 1,
+      "name": "dummy location",
+      "brief_description": "yes",
+      "long_description": "ya",
+      "available_commands": {
+        "go east": 39
+      },
+      "items": []
+    }
+  ],
+  "items": [
+    {
+      "name": "toonie",
+      "description": "There is a toonie on the ground. Someone must have dropped it.",
+      "start_position": 37,
+      "target_position": 38,
+      "target_points": 5
+    }, {
+      "name": "loonie",
+      "description": "There is a loonie on the ground. Someone must have dropped it.",
+      "start_position": 19,
+      "target_position": 38,
+      "target_points": 5
+    }, {
+      "name": "charger",
+      "description": "UltraVolt 240W HyperCharge Pro – PD 3.1 TurboX Supreme Edition",
+      "start_position": 1,
+      "target_position": 4,
+      "target_points": 5
+    }, {
+      "name": "mug",
+      "description": "A mug that hasn't been washed in 3 months. the layers of dried coffee at the bottom should be studied by geologists.",
+      "start_position": 37,
+      "target_position": 4,
+      "target_points": 5
+    }, {
+      "name": "usb",
+      "description": "flash drive with a wobbly usb connector after being abused too often at the port. no one knows how its still working",
+      "start_position": 37,
+      "target_position": 4,
+      "target_points": 5
+    }
+  ],
+  "player": {
+    "name": "Player",
+    "score": 0,
+    "current_location": 35,
+    "time_remaining": 60,
+    "items": []
+  }
+}
