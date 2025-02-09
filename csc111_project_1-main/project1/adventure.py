@@ -162,7 +162,9 @@ def handle_menu_action(choice: str) -> None:
     elif choice == "look":
         print(location.long_description)
     elif choice == "inventory":
-        print(f'Your inventory contains: {game.player.inventory}')
+        print(f'Your inventory contains:')
+        for item in game.player.inventory:
+            print(item)
     elif choice == "score":
         print(f'Your score is {game.player.score} points')
     elif choice == "undo":
@@ -218,7 +220,8 @@ def handle_event_action(choice: str) -> None:
 
             else:
                 items = game._items  # dic
-                game.player.inventory.append(items[loc.items[-1]])
+                #game.player.inventory.append(items[loc.items[-1]])
+                game.player.inventory.append(loc.items[-1])
                 event = Event(loc.id_num, game.get_location().name)
                 game_log.add_event(event, f'picked up {loc.items[-1]}')
                 loc.items.pop(-1)
